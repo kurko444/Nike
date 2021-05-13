@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Miha Kurincic</title>
+		<link rel="stylesheet" href="stil.css"/>
+	</head>
+	<body>
+
+		<div class="navbar">
+			<ul>
+				<li><img src="napis.png" id="ime"></li>
+				<li><a href="majca.html">Majca</a></li>
+				<li><a class="active" href="cevelj.html">Cevelj</a></li>
+				<li><a href="Slika.html">Slika</a></li>
+			</ul>
+		</div>
+		<hr>
+
+		<div id="glavni">
+		  <h2 style="color:white">Miha Kurincic</h2>
+		  <img src="cevelj.png" alt="cevelj" id="cevelj">
+		  <canvas id="myCanvas"></canvas>
+		</div>
+		<script>
+		  var canvas = document.getElementById('myCanvas');
+		  var context = canvas.getContext('2d');
+
+		  context.beginPath();
+		  context.moveTo(53.3, 3.3);
+		  context.bezierCurveTo(-23.3, 83.3, -36.6, 216.6, 300, 3.3);
+		  context.bezierCurveTo( 93.3, 76.6, 6.6, 106.6, 52.6, 4.3);
+		  context.lineWidth = 1;
+
+		  // line color
+		  context.strokeStyle = 'black';
+		  context.stroke();
+		  context.fillStyle='black';
+		  context.fill();
+		</script>
+	</body>
+</html>
